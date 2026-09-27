@@ -1,0 +1,16 @@
+{
+  "name": "rishabh-tiwari-homepage",
+  "version": "1.0.0",
+  "description": "Personal homepage for Rishabh Tiwari - CS 5610 Web Development Project 1.",
+  "type": "module",
+  "author": "Rishabh Tiwari",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint js/**/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  }
+}

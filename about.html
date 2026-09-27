@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rishabh Tiwari" />
+    <meta
+      name="description"
+      content="About Rishabh Tiwari - MS Computer Science student at Northeastern, backend and infrastructure engineer, with experience at CodSoft and Cognifyz."
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <title>About | Rishabh Tiwari</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/contact.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-brand" href="./index.html">rishabh<span class="nav-accent">.dev</span></a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="./index.html">Home</a></li>
+          <li><a class="nav-link nav-link-active" href="./about.html">About</a></li>
+          <li><a class="nav-link" href="./projects.html">Projects</a></li>
+          <li>
+            <a class="nav-link" href="https://github.com/rishabht877" target="_blank" rel="noopener"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="https://www.linkedin.com/in/rishabht877/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="about-hero" aria-labelledby="about-heading">
+        <img
+          class="about-avatar"
+          src="./images/profile.jpg"
+          alt="Portrait of Rishabh Tiwari"
+          width="120"
+          height="120"
+        />
+        <div class="about-intro">
+          <h1 class="about-name" id="about-heading">Rishabh Tiwari</h1>
+          <p class="about-role">Backend &amp; Infrastructure Engineer</p>
+          <p class="about-bio">
+            I am a Master of Science in Computer Science student at Northeastern University's Khoury
+            College, graduating December 2027. I focus on backend and infrastructure engineering:
+            distributed systems, event-driven pipelines, and the tooling that keeps them observable
+            and reliable. I currently work as a Teaching Assistant for DS 3000, and I have shipped
+            production features across two software engineering internships.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="experience-heading">
+        <h2 class="section-heading" id="experience-heading">Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3 class="timeline-role">Teaching Assistant &mdash; DS 3000</h3>
+            <p class="timeline-org">
+              Khoury College, Northeastern University &middot; Sep 2026 &ndash; Dec 2026
+            </p>
+            <p class="timeline-desc">
+              Supporting students in the mathematical foundations of AI through office hours,
+              coursework, and grading.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <h3 class="timeline-role">Software Engineering Intern &mdash; CodSoft</h3>
+            <p class="timeline-org">Jan 2025 &ndash; Mar 2025</p>
+            <p class="timeline-desc">
+              Shipped a Node/React app to AWS EC2 under pm2, containerized the backend with a
+              multi-stage Dockerfile, migrated data to AWS RDS PostgreSQL, and automated deploys
+              with a GitHub Actions workflow.
+            </p>
+          </article>
+          <article class="timeline-item">
+            <h3 class="timeline-role">Software Engineering Intern &mdash; Cognifyz Technology</h3>
+            <p class="timeline-org">Jul 2024 &ndash; Sep 2024</p>
+            <p class="timeline-desc">
+              Built Express REST endpoints with JWT auth and Redis session storage, designed MongoDB
+              compound indexes to speed up hot endpoints, and enforced Jest coverage and linting in
+              a CI pipeline.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-heading">
+        <h2 class="section-heading" id="projects-heading">Featured projects</h2>
+        <div class="card-grid">
+          <article class="project-card">
+            <h3 class="project-title">SecureCheck</h3>
+            <p class="project-desc">
+              A CI/CD security gate that scans every GitHub pull request for vulnerabilities and
+              blocks merges on HIGH severity findings, built on API Gateway, Lambda, SQS, and a
+              containerized Semgrep scanner, with the whole AWS footprint provisioned in Terraform.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/rishabht877/securecheck"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </article>
+          <article class="project-card">
+            <h3 class="project-title">TransactIQ</h3>
+            <p class="project-desc">
+              A Kafka payment pipeline with a transactional outbox and idempotent consumers for
+              effectively-once processing, plus a fraud-triage service pairing deterministic rules
+              with an LLM.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/rishabht877/TransactIQ"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </article>
+          <article class="project-card">
+            <h3 class="project-title">PromptRelay</h3>
+            <p class="project-desc">
+              An OpenAI-compatible Go gateway fronting multiple LLM providers with fallback, a
+              semantic response cache over Redis, and Prometheus/Grafana observability.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/rishabht877/PromptRelay"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </article>
+          <article class="project-card">
+            <h3 class="project-title">HelmWarden</h3>
+            <p class="project-desc">
+              A Kubernetes operator in Go that reconciles Helm releases to desired state and
+              auto-rolls-back failed rollouts, with a validating admission webhook and a
+              Trivy-scanning CI pipeline.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/rishabht877/HelmWarden"
+              target="_blank"
+              rel="noopener"
+              >View on GitHub</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="contact-heading">
+        <h2 class="section-heading" id="contact-heading">Get in touch</h2>
+        <p class="contact-intro">
+          Have a role or a question? Send a message and it will open in your email client.
+        </p>
+        <form class="contact-form" novalidate>
+          <div class="form-row">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" autocomplete="name" />
+            <p class="form-error" data-error-for="name"></p>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" autocomplete="email" />
+            <p class="form-error" data-error-for="email"></p>
+          </div>
+          <div class="form-row">
+            <label class="form-label" for="message">Message</label>
+            <textarea
+              class="form-input form-textarea"
+              id="message"
+              name="message"
+              rows="4"
+            ></textarea>
+            <p class="form-error" data-error-for="message"></p>
+          </div>
+          <button class="btn btn-solid" type="submit">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-text">
+        <a class="footer-link" href="mailto:rishabhtiwari877@gmail.com"
+          >rishabhtiwari877@gmail.com</a
+        >
+        <span class="footer-sep">&middot;</span>
+        <a class="footer-link" href="https://github.com/rishabht877" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        <span class="footer-sep">&middot;</span>
+        <a
+          class="footer-link"
+          href="https://www.linkedin.com/in/rishabht877/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+      </p>
+      <p class="footer-copy">&copy; <span class="footer-year"></span> Rishabh Tiwari</p>
+    </footer>
+  </body>
+</html>

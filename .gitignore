@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+
+# Logs
+npm-debug.log*
+*.log
+
+# Editor
+.vscode/
+.idea/
+
+# Design document (submitted separately, not tracked here)
+design-doc.pdf
