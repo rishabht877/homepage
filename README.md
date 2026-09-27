@@ -24,6 +24,13 @@ The site has three pages, each at its own URL:
 
 <https://rishabht877.github.io/homepage/>
 
+## Design Document
+
+The design document covering the project description, user personas, user stories,
+and design mockups is in this repository as
+[design-doc.pdf](./design-doc.pdf), and is also viewable online at
+<https://rishabht877.github.io/homepage/design-doc.pdf>.
+
 ## Features
 
 - **Animated terminal (original component).** `js/terminal.js` types out a shell
