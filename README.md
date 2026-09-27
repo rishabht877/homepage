@@ -1,7 +1,7 @@
 # Rishabh Tiwari - Personal Homepage
 
 **Author:** Rishabh Tiwari
-**Class:** CS 5610 Web Development, Northeastern University (Fall 2026) - [course link](https://johnguerra.co/classes/webDevelopment_fall_2026/)
+**Class:** [CS 5610 Web Development](https://johnguerra.co/classes/webDevelopment_online_fall_2026/), Northeastern University, Fall 2026
 
 ## Project Objective
 
