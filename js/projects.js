@@ -54,7 +54,9 @@ function writeStateToUrl() {
 
 function readStateFromUrl() {
   const params = new URLSearchParams(window.location.search);
-  state.sort = params.get("sort") ?? "featured";
+  const sortParam = params.get("sort");
+state.sort =
+  sortParam && COMPARATORS[sortParam] ? sortParam : "featured";
 
   const tags = params.get("tags");
   if (tags) {
